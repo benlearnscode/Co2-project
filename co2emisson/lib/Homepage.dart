@@ -187,7 +187,77 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ],
                 ),
-              )
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: Text(
+                  "Scopes of Co2 emission :",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+              ),
+              SizedBox(
+                height: 14,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 174, 176, 177),
+                      borderRadius: BorderRadius.circular(12)),
+                  padding: EdgeInsets.all(17),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        " Scope 1 emissions :",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.w600),
+                      ),
+                      Text(
+                          "               Scope 1 covers emissions from sources that an organisation owns or controls directly – for example from burning fuel in our fleet of vehicles (if they’re not electrically-powered)."),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        " Scope 2 emissions :",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.w600),
+                      ),
+                      Text(
+                          "               Scope 2 are emissions that a company causes indirectly and come from where the energy it purchases and uses is produced. For example, the emissions caused when generating the electricity that we use in our buildings would fall into this category."),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        " Scope 3 emissions",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.w600),
+                      ),
+                      Text(
+                          "              Scope 3 encompasses emissions that are not produced by the company itself and are not the result of activities from assets owned or controlled by them, but by those that it’s indirectly responsible for up and down its value chain. An example of this is when we buy, use and dispose of products from suppliers. Scope 3 emissions include all sources not within the scope 1 and 2 boundaries."),
+                      SizedBox(
+                        height: 10,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(17.0),
+                child: Text(
+                  "overall graph of carbon emission rate :",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                ),
+              ),
+              SizedBox(
+                height: 60,
+              ),
             ],
           ),
         ),
@@ -266,7 +336,7 @@ class _HomepageState extends State<Homepage> {
                   Expanded(
                     child: StatusIndicattor(
                       title: "Electricity",
-                      value: "12%",
+                      value: "12% I",
                       Statuscolor: Colors.red,
                       onPressed: () {},
                     ),
@@ -274,7 +344,7 @@ class _HomepageState extends State<Homepage> {
                   Expanded(
                     child: StatusIndicattor(
                       title: "Food",
-                      value: "12%",
+                      value: "20% D",
                       Statuscolor: Colors.red,
                       onPressed: () {},
                     ),
@@ -282,7 +352,7 @@ class _HomepageState extends State<Homepage> {
                   Expanded(
                     child: StatusIndicattor(
                       title: "Transport",
-                      value: "12%",
+                      value: "1% I",
                       Statuscolor: Colors.red,
                       onPressed: () {},
                     ),

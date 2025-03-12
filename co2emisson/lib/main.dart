@@ -1,6 +1,11 @@
 import 'package:co2emisson/Electricity/ElectricityInsertion.dart';
 import 'package:co2emisson/Electricity/Electricityhome.dart';
+
+import 'package:co2emisson/Electricity/addelectricity.dart';
+import 'package:co2emisson/Electricity/present.dart';
 import 'package:co2emisson/Food/FoodHome.dart';
+import 'package:co2emisson/Food/addfoodwaste.dart';
+import 'package:co2emisson/Food/foodinsertion.dart';
 import 'package:co2emisson/Homepage.dart';
 import 'package:co2emisson/Transport/TransportHome.dart';
 import 'package:co2emisson/carbonsummary/carbonsummary.dart';
@@ -30,10 +35,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const IntroPage(),
-      // home: Homepage(),
-      // home: ElectricityInsertion(),
-
+      // home: const IntroPage(),
+      home: StarterPage(),
+      // home: ElectricityConsumptionPage(),
+      // initialRoute: FoodHome.routeName,
       routes: {
         Homepage.routename: (context) => Homepage(),
         LoginPage.routeName: (context) => LoginPage(),
